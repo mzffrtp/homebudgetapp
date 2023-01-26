@@ -6,7 +6,7 @@
 }
 
 .categoriesContainer_wrapper {
-    width:80%;
+    width:70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +27,9 @@
 
 }
 
+.categoriesContainer_wrapper-itemActive{
+    background-color: pink;
+}
 .categoriesContainer_wrapper-item:hover{
     background-color: pink;
 }
