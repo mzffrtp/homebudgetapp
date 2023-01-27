@@ -52,7 +52,9 @@ if(categories === null || expenses === null ){
       />
       <ListExpenses 
       expenses ={expenses}
-      categories = {categories}/>
+      categories = {categories}
+      selectedCategory ={selectedCategory}
+      />
     </div>
   );
 }

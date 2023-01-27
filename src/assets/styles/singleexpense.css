@@ -44,4 +44,7 @@
     right:10px;
     font-size: 1.2rem;
     color:darkmagenta;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: azure;
 }
