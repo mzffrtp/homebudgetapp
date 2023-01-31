@@ -33,3 +33,10 @@
 .categoriesContainer_wrapper-item:hover{
     background-color: pink;
 }
+
+@media screen and (min-width: 585px) {
+    .categoriesContainer_wrapper{
+        margin-top: 1rem;
+        width:75%;
+    }
+  }

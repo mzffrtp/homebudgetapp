@@ -1,40 +1,50 @@
 {
-    "expenses":[
-        {
-            "id":"1",
-            "price":600,
-            "place": "Coop",
-            "date": "19.01.2023",
-            "title":"food",
-            "description": "forgot oil for grill!",
-            "categoryId":"1"
-        },
-        {
-            "id":"2",
-            "price":52000,
-            "place": "Apple",
-            "date": "19.01.2023",
-            "title":"iPhone 14 promax",
-            "description": "will be paid in 12 payment",
-            "categoryId":"4"
-        }
-    ],
-    "categories":[
-        {
-            "id":"1",
-            "name":"Market"
-        },
-        {
-            "id":"2",
-            "name":"Dressing"
-        },
-        {
-            "id":"3",
-            "name":"Education"
-        },
-        {
-            "id":"4",
-            "name":"Electronincs"
-        }
-    ]    
+  "expenses": [
+    {
+      "id": "1",
+      "price": 600,
+      "place": "Coop",
+      "date": "2023-01-19",
+      "title": "food",
+      "description": "forgot oil for grill!",
+      "categoryId": "1"
+    },
+    {
+      "id": "2",
+      "price": 52000,
+      "place": "Apple",
+      "date": "2023-01-19",
+      "title": "iPhone 14 promax",
+      "description": "will be paid in 12 payment",
+      "categoryId": "4"
+    },
+    {
+      "price": "50",
+      "place": "Apotek",
+      "title": "Medicine",
+      "description": "Vitamin for winter",
+      "date": "2023-01-20",
+      "categoryId": "1",
+      "desription": "i",
+      "id": "1675188843001"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Market"
+    },
+    {
+      "id": "2",
+      "name": "Dressing"
+    },
+    {
+      "id": "3",
+      "name": "Education"
+    },
+    {
+      "id": "4",
+      "name": "Electronincs"
+    }
+  ]
 }
