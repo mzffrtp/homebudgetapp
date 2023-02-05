@@ -13,6 +13,7 @@ const Home = () => {
       name:"all"
     })
     const [expenses, setExpenses] =useState(null)
+    const [rerenderExpenses, setRerenderExpense] = useState(false)
   
   useEffect(()=>{
     axios
@@ -32,7 +33,7 @@ const Home = () => {
         console.log(err);
       })
   
-  }, []);
+  }, [rerenderExpenses]);
   
   if(categories === null || expenses === null ){
     return null
@@ -49,6 +50,8 @@ const Home = () => {
       expenses ={expenses}
       categories = {categories}
       selectedCategory ={selectedCategory}
+      rerenderExpenses = {rerenderExpenses}
+      setRerenderExpense = {setRerenderExpense}
       />
     </div>
  )   

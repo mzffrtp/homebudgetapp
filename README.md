@@ -7,7 +7,9 @@ Readme will be updated when finished.
 ### TASKS
 
 - React;
-    * for flexibility and compability with reusable components
+    * for flexibility and compability with reusable components 
+        - header with different function at different pages
+        - general component for error handling and getting validation from user in delete and edit functions
     * JSX syntax
     * hooks
         . useEffect for lifecyckle methods
@@ -15,8 +17,8 @@ Readme will be updated when finished.
         . whichPage hook for different variations of components
     * prop-drilling for passing data between several nested childrens
 - Json-server as back-end data storage
-- Bootstrap, css used for designing, animated icons added
-- UI: responsive web design, interactive Uis  with react
+- Bootstrap, ant design library fir react, css used for designing, animated icons added
+- UI: responsive web design, interactive UIs  with react
 - React-router-dom for navigation between pages.
 
 ### DESCRIPTON
@@ -26,5 +28,6 @@ Readme will be updated when finished.
     * list all expenses or according to category options.
     * delete or edit expenses in listexpenses component.
     * add new expenses and calculate the total amount of expenses.
+    
 
 

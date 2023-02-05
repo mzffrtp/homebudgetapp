@@ -1,0 +1,60 @@
+.modalContainer{
+    position: fixed;
+    top: 400px;
+    left:0px;
+    width:100%;
+    z-index:10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContentContainer{
+    width:50%;
+    background-color:rgb(236, 243, 185);
+    padding:20px;
+    border-radius: 10px;
+}
+
+.modalTitle, .modalText{
+    text-align: center;
+}
+
+.modalsBtnWrapper{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+.cancelBtn, .confirmBtn {
+    min-width: 5rem;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancelBtn{
+    border: 3px solid chartreuse;
+    background-color: aquamarine;
+}
+
+.cancelBtn:hover{
+    background-color: chartreuse;
+    color:black;
+    box-shadow: 3px 3px 0 0 grey;
+
+}
+
+.confirmBtn{
+    border: 3px solid crimson;
+    background-color: aquamarine;
+
+}
+
+.confirmBtn:hover{
+    background-color: crimson;
+    color:black;
+    box-shadow: 3px 3px 0 0 grey;
+
+}

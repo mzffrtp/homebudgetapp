@@ -6,7 +6,7 @@ import SingleExpense from "./SingleExpense";
 
 import addNew from "../assets/imgs/add.png"
 
-const ListExpenses = ({ expenses = [], categories, selectedCategory }) => {
+const ListExpenses = ({ expenses = [], categories, selectedCategory, rerenderExpenses, setRerenderExpense}) => {
 
     const [filteredExpenses, setFilteredExpenses] = useState(expenses);
     const navigate = useNavigate();
@@ -47,6 +47,8 @@ const ListExpenses = ({ expenses = [], categories, selectedCategory }) => {
                                         key={expense.id}
                                         expense={expense}
                                         categories={categories}
+                                        rerenderExpenses = {rerenderExpenses}
+                                        setRerenderExpense = {setRerenderExpense}
                                     />
                                 ))
                             }
