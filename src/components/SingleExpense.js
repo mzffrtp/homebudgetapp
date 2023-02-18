@@ -39,11 +39,11 @@ const SingleExpense = ({ expense, categories = [], rerenderExpenses, setRerender
             <div className="btnWrapper">
                 <div
                     onClick={() => navigate(`/edit-expense/${expense.id}`)}>
-                    <img src={editIcon} className="expenseIcon" />
+                    <img src={editIcon} className="expenseIcon" alt=""/>
                 </div>
                 <div
                     onClick={() => setShowDeleteModal(true)}>
-                    <img src={remove} className="expenseIcon" />
+                    <img src={remove} className="expenseIcon" alt=""/>
                 </div>
             </div>
             <div className="expenseCategory" >

@@ -36,7 +36,6 @@ const AddExpense = () => {
             .catch((err) => {
                 console.log(err);
             })
-
     }, [])
 
     const handleSubmit = (event) => {

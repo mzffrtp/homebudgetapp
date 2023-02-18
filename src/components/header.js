@@ -24,18 +24,18 @@ const Header = ({ whichPage, navigateTo}) => {
                     <div 
                     onClick={()=> navigate("/")}
                     className="toHome">
-                        <img src={backArrow} />
+                        <img src={backArrow} alt=""/>
                     </div>
                 )
             }
             <div className="header_Container_Wrapper">
 
                 <div className="header_Container_Wrapper-logo">
-                    <img src={logo}></img>
+                    <img src={logo} alt=""></img>
                 </div>
                 <h1> Your Budget App</h1>
                 <div className="header_Container_Wrapper-logo">
-                    <img src={logo1}></img>
+                    <img src={logo1} alt=""></img>
                 </div>
             </div>
         </div>

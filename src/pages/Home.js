@@ -41,7 +41,7 @@ const Home = () => {
 
  return (
     <div>
-        <Header whichPage={"home"}/>
+      <Header whichPage={"categoryActions"}/>
       <CategoriesList categories={categories} 
       selectedCategory = {selectedCategory} 
       setSelectedCategory = {setSelectedCategory}

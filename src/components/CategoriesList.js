@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../assets/styles/categories.css"
 
@@ -9,6 +10,10 @@ const CategoriesList = ({
 }) => {
     return (
         <div className="categoriesContainer" >
+            <div className="categoryActions">
+                <Link 
+                to={"/category-actions"}>Category Actions &rarr;</Link>
+            </div>
             <div className="categoriesContainer_wrapper">
                 <p
                     onClick={() =>
