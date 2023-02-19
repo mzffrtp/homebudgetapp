@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AddExpense from "./pages/AddExpense";
 import EditExpense from "./pages/EditExpense";
 import CategoryActions from "./pages/CategoryActions";
+import AddCategory from "./pages/AddCategory";
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
         <Route path="/add-expense" element={<AddExpense />} />
         <Route path="/edit-expense/:expenseId" element={<EditExpense />} />
         <Route path="/category-actions" element={<CategoryActions />} />
+        <Route path="/add-category" element={<AddCategory />} />
 
 
       </Routes>

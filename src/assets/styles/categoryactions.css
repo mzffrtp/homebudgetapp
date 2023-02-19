@@ -2,12 +2,35 @@
     width:100%;
     display: flex;
     justify-content: center;
+ position: relative;
+
 
 }
 
 .catOpContentWrapper{
  width:70%;
  padding:10px;
- border: 1px solid;
+ border-radius: 5px;
+ box-shadow: 0px 0px 5px 5px rgba(158, 244, 248, 0.5);
+ margin: 25px 0px;
+}
 
+.catActCatWrapper{
+    padding: 10px;
+    border-bottom: 1px solid powderblue;
+}
+
+.addBtn {
+position: absolute;
+top: -40px;
+left:250px;
+border:none;
+filter: drop-shadow(8px 8px 4px rgb(188, 245, 166))
+}
+
+@media screen and (min-width: 585px) {
+    .addBtn {
+        top: -40px;
+        left:700px;
+        }
 }

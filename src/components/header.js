@@ -22,7 +22,7 @@ const Header = ({ whichPage, navigateTo}) => {
             {
                 showBack === true && (
                     <div 
-                    onClick={()=> navigate("/")}
+                    onClick={()=> navigate(navigateTo)}
                     className="toHome">
                         <img src={backArrow} alt=""/>
                     </div>
