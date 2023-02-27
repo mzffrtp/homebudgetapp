@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "../assets/styles/singleexpense.css"
+import "../assets/styles/singleexpense.css";
 import remove from "../assets/imgs/remove.gif";
 import editIcon from "../assets/imgs/pencil.gif";
 import axios from "axios";
@@ -31,12 +31,13 @@ const SingleExpense = ({ expense, categories = [], rerenderExpenses, setRerender
     };
     return (
         <div className="expenseWrapper">
-            <h2 className="expenseTitle">
+            <h3 className="expenseTitle mt-3"
+            style={{minHeight:"5rem"}}>
                 {expense.title}
-            </h2>
+            </h3>
             <p className="expenseDescription">{expense.description}</p>
             <h4 className="expensePrize">{expense.price} €</h4>
-            <div className="btnWrapper">
+            <div className="btnWrapper mt-5">
                 <div
                     onClick={() => navigate(`/edit-expense/${expense.id}`)}>
                     <img src={editIcon} className="expenseIcon" alt=""/>
@@ -46,8 +47,9 @@ const SingleExpense = ({ expense, categories = [], rerenderExpenses, setRerender
                     <img src={remove} className="expenseIcon" alt=""/>
                 </div>
             </div>
-            <div className="expenseCategory" >
-                <p >{expenseCategory.name}</p>
+            <div className="expenseCategory"
+            style={{marginTop:""}} >
+                <p>{expenseCategory.name}</p>
             </div>
             {
                 showDeleteModal === true && (

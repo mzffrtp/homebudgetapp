@@ -1,15 +1,6 @@
 {
   "expenses": [
     {
-      "id": "1",
-      "price": 600,
-      "place": "Coop",
-      "date": "2023-01-19",
-      "title": "food",
-      "description": "forgot oil for grill!",
-      "categoryId": "1"
-    },
-    {
       "id": "2",
       "price": 52000,
       "place": "Apple",
@@ -21,24 +12,16 @@
   ],
   "categories": [
     {
-      "id": "1",
-      "name": "Market"
-    },
-    {
-      "id": "2",
-      "name": "Dressing"
-    },
-    {
-      "id": "3",
-      "name": "Education"
-    },
-    {
       "id": "4",
       "name": "Electronincs"
     },
     {
-      "id": "1676764644087",
-      "name": "sd"
+      "id": "1677533490839",
+      "name": "wrap 1"
+    },
+    {
+      "id": "1677533631930",
+      "name": "wrap-2"
     }
   ]
 }

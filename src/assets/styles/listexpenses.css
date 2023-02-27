@@ -40,23 +40,24 @@
 
 .priceWrapper{
     position: absolute;
-    padding: 10px;
     background-color:tomato;
-    top: -125px;
-    left: 45px;;
+    top: -190px;
+    left: 85px;;
     width:150px;
     height: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.2rem;
     border-radius: 10px;
+    height: auto;
 }
 
 @media screen and (min-width: 585px) {
     .priceWrapper{
         background-color:tomato;
-        top: -135px;
-        left: 125px;
+        top: -170px;
+        left: 180px;
        
     }
   }

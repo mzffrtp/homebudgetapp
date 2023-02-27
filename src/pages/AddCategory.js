@@ -32,12 +32,12 @@ const AddCategory = () => {
         if(form.name ===""){
             setShowError(true)
         }
-        /*const hasCategory = categories.find(item=> item.name.toLowerCase() === categories.name.toLowerCase())
+        const hasCategory = categories.find(item=> item.name.toLowerCase() === form.name.toLowerCase())
 
         if(hasCategory !== undefined){
             alert("This category is already recorded.")
         }
-*/
+
         axios
             .post("http://localhost:3004/categories", form)
             .then((res)=>{

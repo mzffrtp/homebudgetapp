@@ -9,13 +9,16 @@ const CategoriesList = ({
     selectedCategory
 }) => {
     return (
-        <div className="categoriesContainer" >
+        <div className="categoriesContainer"
+        style={{minHeight:"10rem"}} >
             <div className="categoryActions">
                 <Link 
-                to={"/category-actions"}>Category Actions &rarr;</Link>
+                    to={"/category-actions"}>Category Actions &rarr;</Link>
             </div>
-            <div className="categoriesContainer_wrapper">
-                <p
+            <div className="categoriesContainer_wrapper mt-3 pt-3 overflow-x-scroll"
+            >
+                <p 
+                className="text-wrap"
                     onClick={() =>
                         setSelectedCategory({ id: "0", name: "all" })}
                     className={`categoriesContainer_wrapper-item ${selectedCategory.id === "0" ? "categoriesContainer_wrapper-itemActive" : ""}`}>All</p>
