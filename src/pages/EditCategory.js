@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 import GeneralModal from "../components/GeneralModal";
 import Header from "../components/header";
+import { specialCharsnadNumbers } from "../utils/functions";
 
 const EditCategory = () => {
     const navigate = useNavigate();
@@ -37,6 +38,10 @@ const EditCategory = () => {
 
         /* validation */
         if (form.name === "") { alert("name can´t be left empty") }
+
+        if(specialCharsnadNumbers(form.name)) 
+        {alert("Name cannot include special characters or numbers!"); return}
+        
 
         const hasCategory = allCategories.find(category=> category.name.toLowerCase() === form.name.toLowerCase())
         if(hasCategory !== undefined) {return (alert("This category is already exits."))}

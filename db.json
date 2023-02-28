@@ -1,31 +1,9 @@
 {
-  "expenses": [
-    {
-      "price": "5",
-      "place": "sd",
-      "title": "sa67\"",
-      "description": "dog",
-      "date": "2023-02-17",
-      "categoryId": "1677578369413",
-      "id": "1677578393462"
-    }
-  ],
+  "expenses": [],
   "categories": [
     {
-      "id": "1677578369413",
+      "id": "1677587709717",
       "name": "food"
-    },
-    {
-      "id": "1677579196505",
-      "name": "car"
-    },
-    {
-      "id": "1677579217020",
-      "name": "help"
-    },
-    {
-      "id": "1677579353626",
-      "name": "help"
     }
   ]
 }

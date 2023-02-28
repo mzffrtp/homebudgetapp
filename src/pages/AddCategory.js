@@ -37,6 +37,7 @@ const AddCategory = () => {
 
         if(hasCategory !== undefined){
             alert("This category is already recorded.")
+            return
         }
 
         
