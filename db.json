@@ -1,27 +1,31 @@
 {
   "expenses": [
     {
-      "id": "2",
-      "price": 52000,
-      "place": "Apple",
-      "date": "2023-02-24",
-      "title": "iPhone 14 premix deneme 2",
-      "description": "will be paid in 12 payment",
-      "categoryId": "4"
+      "price": "5",
+      "place": "sd",
+      "title": "sa67\"",
+      "description": "dog",
+      "date": "2023-02-17",
+      "categoryId": "1677578369413",
+      "id": "1677578393462"
     }
   ],
   "categories": [
     {
-      "id": "4",
-      "name": "Electronincs"
+      "id": "1677578369413",
+      "name": "food"
     },
     {
-      "id": "1677533490839",
-      "name": "wrap 1"
+      "id": "1677579196505",
+      "name": "car"
     },
     {
-      "id": "1677533631930",
-      "name": "wrap-2"
+      "id": "1677579217020",
+      "name": "help"
+    },
+    {
+      "id": "1677579353626",
+      "name": "help"
     }
   ]
 }

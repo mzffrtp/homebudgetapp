@@ -5,7 +5,8 @@ import { useNavigate, Link } from "react-router-dom";
 import Header from "../components/header";
 import "../assets/styles/categoryactions.css";
 import add from "../assets/imgs/add.png";
-import GeneralModal from "../components/GeneralModal"
+import GeneralModal from "../components/GeneralModal";
+import { capitalUpper } from "../utils/functions";
 
 const CategoryActions = () => {
 
@@ -60,7 +61,7 @@ const CategoryActions = () => {
                                             className="d-flex justify-content-between"
                                             style={{ borderBottom: "1px solid yellowgreen", marginBottom: "1rem" }}
                                             key={category.id}>
-                                            <p>{category.name}</p>
+                                            <p>{ capitalUpper (category.name)}</p>
                                             <div className="d-flex gap-3">
                                                 <button
                                                     className="btn btn-outline-danger mb-2"

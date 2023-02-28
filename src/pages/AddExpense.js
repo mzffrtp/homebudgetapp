@@ -1,27 +1,21 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import Header from "../components/header";
-import "../assets/styles/addexpense.css"
+import "../assets/styles/addexpense.css";
+import { specialCharsnadNumbers } from "../utils/functions";
+import { dateFormat } from "../utils/functions";
 
 const AddExpense = () => {
     const navigate = useNavigate();
-
-    var year = new Date().getFullYear;
-
-    var month = new Date().getMonth() + 1
-    if (month < 10) month = `0${month}`;
-
-    var date = new Date().getDate();
-    if (date < 10) date = `0${date}`;
 
     const [form, setForm] = useState({
         price: "",
         place: "",
         title: "",
         description: "",
-        date: `${year}-${month}-${date}`,
+        date: dateFormat(new Date()) ,
         categoryId: ""
     });
 
@@ -52,6 +46,10 @@ const AddExpense = () => {
         ) {
             alert("Bütün alanlar zorunludur");
             return;
+        }
+
+        if(specialCharsnadNumbers(form.title)){
+            alert("Name cannot include special characters or numbers!"); return
         }
         axios
             .post("http://localhost:3004/expenses", { ...form, id: String(new Date().getTime()) })
@@ -105,8 +103,11 @@ const AddExpense = () => {
                         />
                     </div>
                     <div className="formElement">
-                        <label htmlFor="category" >Category</label>
-                        <select defaultValue={categories[0].id}
+                        {
+                            categories.length > 0 && (
+                                <>
+                                <label htmlFor="category" >Category</label>
+                        <select
                             onChange={(event) => setForm({ ...form, categoryId: event.target.value })}
                         >
                             <option value={"empty"}>Please choose a category</option>
@@ -118,7 +119,17 @@ const AddExpense = () => {
                                     >{category.name}</option>
                                 ))
                             }
-                        </select>
+                        </select></>
+                            )
+                        }
+                        {
+                            categories.length <= 0 && (
+                                <Link
+                                to={"/add-category"}
+                                className="btn btn danger btn-outline-success  m-auto"
+                                >Add a category at first!</Link>
+                            )
+                        }
                     </div>
                     <div className="submitBtnWrapper">
                         <button className="submitBtn" type="submit">Save</button>

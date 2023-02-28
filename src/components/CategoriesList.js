@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../assets/styles/categories.css"
+import "../assets/styles/categories.css";
+import { capitalUpper } from "../utils/functions";
 
 const CategoriesList = ({
     categories,
@@ -27,9 +28,8 @@ const CategoriesList = ({
                         <p
                         key = {category.id}
                             onClick={() => setSelectedCategory(category)}
-                            className={`categoriesContainer_wrapper-item ${selectedCategory.id === category.id ? "categoriesContainer_wrapper-itemActive" : ""}`}
-                            key={category.id}>
-                            {category.name}</p>
+                            className={`categoriesContainer_wrapper-item ${selectedCategory.id === category.id ? "categoriesContainer_wrapper-itemActive" : ""}`}>
+                           {capitalUpper(category.name)}</p>
                     ))
                 }
             </div>

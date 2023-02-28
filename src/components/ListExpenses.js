@@ -33,7 +33,7 @@ const ListExpenses = ({ expenses = [], categories, selectedCategory, rerenderExp
             <div 
             onClick={()=>navigate ("/add-expense")}
             className="addNew">
-                <img src={addNew} />
+                <img src={addNew}/>
             </div>
             <div className="expensesWrapper">
                 {

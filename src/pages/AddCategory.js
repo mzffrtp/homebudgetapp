@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/header";
-import "../assets/styles/addexpense.css"
+import "../assets/styles/addexpense.css";
 import GeneralModal from "../components/GeneralModal";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { specialCharsnadNumbers } from "../utils/functions";
 
 const AddCategory = () => {
 
@@ -38,6 +39,10 @@ const AddCategory = () => {
             alert("This category is already recorded.")
         }
 
+        
+        if(specialCharsnadNumbers(form.name)) 
+        {alert("Name cannot include special characters or numbers!"); return}
+        
         axios
             .post("http://localhost:3004/categories", form)
             .then((res)=>{

@@ -6,6 +6,7 @@ import editIcon from "../assets/imgs/pencil.gif";
 import axios from "axios";
 import GeneralModal from "./GeneralModal";
 import { useNavigate } from "react-router-dom";
+import { capitalUpper } from "../utils/functions";
 
 
 
@@ -49,7 +50,7 @@ const SingleExpense = ({ expense, categories = [], rerenderExpenses, setRerender
             </div>
             <div className="expenseCategory"
             style={{marginTop:""}} >
-                <p>{expenseCategory.name}</p>
+                <p>{capitalUpper(expenseCategory.name)}</p>
             </div>
             {
                 showDeleteModal === true && (
